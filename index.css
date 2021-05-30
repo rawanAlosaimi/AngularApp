@@ -1,0 +1,278 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    background-image: url('./img/background.png');
+    overflow: hidden;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+#logo{
+    width: 15vh;
+    height: 10vh
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    font-size: 1.2rem;
+    margin: 2px;
+    font-family: "GE SS Two Light";
+}
+
+#curent{
+    border-bottom: 3px solid #5D8E6D;
+    border-radius: 3px;
+}
+
+.nav-link:hover{
+    border-bottom: 3px solid rgba(93, 142, 109, 0.5);
+    border-radius: 3px;
+    
+}
+
+
+
+/* 
+.SocialIcons{
+    height: 50vh;
+    /* background-color: green; 
+} */
+
+.pageContent{
+    height: 90vh;
+    /* background-color: white; */
+}
+
+#twitterIcon{
+    width: 28px;
+    height: 23px;
+}
+
+
+.twitterIcon{
+    padding: 10px;
+    background-color: rgba(93, 142, 109, 0.4);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    /* margin: 10px; */
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    margin: -25px 0 0 -25px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+#youtubeIcon{
+    width: 28px;
+    height: 23px;
+}
+
+.youtubeIcon{
+    padding: 10px;
+    background-color: rgba(93, 142, 109, 0.4);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 28%;
+    left: 5%;
+    margin: -25px 0 0 -25px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#linkedinIcon{
+    width: 28px;
+    height: 23px;
+}
+
+.linkedinIcon{
+    padding: 10px;
+    background-color: rgba(93, 142, 109, 0.4);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 36%;
+    left: 5%;
+    margin: -25px 0 0 -25px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.twitterIcon:hover, .youtubeIcon:hover, .linkedinIcon:hover {
+    background-color: rgba(93, 142, 109, 0.9);
+   }
+ 
+
+/***************************************************************/
+
+
+   #curent{
+    border-bottom: 3px solid #5D8E6D;
+    border-radius: 3px;
+}
+
+.fr{
+    /* height: 90vh; */
+    text-align: center;
+    /* background-color: blanchedalmond; */
+}
+
+#circleImg{
+    width: 50vh;
+    height: 50vh;
+    margin-top: 15vh;
+    animation: rotation 38s linear infinite;
+}
+
+#sheelImg{
+    width: 17vh;
+    transform: translateY(-37vh);
+}
+
+.sr{
+    /* height: 90vh; */
+    text-align: center;
+    font-family: "GE SS Two Light";
+    /* background-color: blueviolet; */
+    
+}
+
+.content{
+    display: flex; 
+    justify-content: flex-end;
+    margin-top: 10vh;
+}
+
+.frText{
+    text-align: center;
+    color: white;
+    /* width: 60vh; */
+    line-height: 2.6;
+    border-top: 2px solid #5D8E6D;
+    margin-right: 10vh;
+}
+
+.frText h1 {
+    line-height: 1.8;
+}
+
+h2{
+    margin-top: 3vh;
+}
+
+.box1{
+    /* width: 50vh; */
+    height: 25vh;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    animation: visibal 3s;
+    margin-right: 5vh;
+}
+
+
+.heder{
+    height: 2.5vh;
+    background-color: #5D8E6D;
+}
+
+
+@keyframes visibal {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
+
+/***** Mobile Design **************/
+
+@media (max-width: 786px){
+
+
+    body{
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
+
+    #logo {
+        width: 13vh;
+        height: 8vh;
+    }
+
+    #twitterIcon, #youtubeIcon, #linkedinIcon{
+        width: 20px;
+        height: 19px;
+    }
+
+    .twitterIcon, .youtubeIcon, .linkedinIcon{
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+        left: 11%;
+    }
+    .twitterIcon{
+        top: 15%;
+    }
+
+    .youtubeIcon{
+        top: 21%;
+    }
+
+    .linkedinIcon{
+        top: 27%;
+    }
+
+    .row {
+        margin-right: 0px;
+    }
+
+  }
+
+  /******** iPad Design **********/
+
+@media screen and (min-width: 768px) and (max-width: 1366px){
+
+    .twitterIcon, .youtubeIcon, .linkedinIcon {
+        width: 50px;
+        height: 50px;
+        padding: 9px;
+        left: 90%;
+    }
+    
+    .twitterIcon{
+      top: 7%;
+    } 
+    .youtubeIcon{
+      top: 20%;
+    } 
+    .linkedinIcon{
+      top: 33%;
+    }
+    
+}
