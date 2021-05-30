@@ -1,0 +1,163 @@
+@font-face{
+  font-family: GE SS Two Medium;
+  src: url(../fonts/GE_SS_Two_Medium.otf) format("truetype");
+}
+
+@font-face{
+  font-family: GE SS Two Light;
+  src: url(../fonts/GE_SS_Two_Light.otf) format("truetype");
+}
+
+
+
+.fr{
+  text-align: center;
+}
+
+.sr{
+  margin-top: 20vh;
+  
+}
+
+#circleImg{
+  width: 50vh;
+  height: 50vh;
+  margin-top: 15vh;
+  animation: rotation 38s linear infinite;
+}
+
+#sheelImg{
+  width: 17vh;
+  transform: translateY(-37vh);
+  position:relative;
+ /*  transform: translate(-34vh,28vh); */
+}
+
+
+.frText{
+  text-align: center;
+  color: white;
+  line-height: 2.6;
+  border-top: 2px solid #5D8E6D;
+  font-family: "GE SS Two Light";
+}
+
+.frText h1 {
+  line-height: 1.8;
+}
+
+h2{
+  margin-top: 3vh;
+}
+
+.box1{
+  text-align: center;
+  height: 25vh;
+  background-color: white;
+  box-shadow: 0 0 10px gray;
+  animation: visibal 3s;
+  margin-top: 5vh;
+}
+
+.box1 h2{
+  font-family: 'GE SS Two Medium';
+}
+
+.box1 p{
+  font-family: "GE SS Two Light";
+}
+
+
+.heder{
+  height: 2.5vh;
+  background-color: #5D8E6D;
+}
+
+
+@keyframes visibal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/***** Mobile Design **************/
+
+@media (max-width: 786px){
+
+
+  .sr{
+    margin-top: -15vh;
+  }
+
+  #circleImg{
+    width: 35vh;
+    height: 35vh;
+    margin-top: 10vh;
+    /* margin-left: -2vh; */
+  }
+  
+  #sheelImg{
+    width: 13vh;
+    transform: translate(0vh, -26vh);
+  }
+
+  .frText{
+    margin-left: 0vh;
+    width: 100%;
+  }
+
+  .frText h1 {
+    font-size: 1.3rem;
+  }
+  
+  .box1{
+    width: 30vh;
+    margin-left: 2vh;
+  }
+
+}
+
+
+
+/******** iPad Design **********/
+
+@media screen and (min-width: 768px) and (max-width: 1366px){
+
+  
+  .sr{
+    margin-top: 2vh;
+  }
+
+  #circleImg{
+    width: 30vh;
+    height: 30vh;
+    margin-left: 12vh;
+  }
+  
+  #sheelImg{
+    width: 11vh;
+    transform: translate(-21vh, 4vh);
+  }
+
+  .box1 {
+    width: 38vh;
+    margin-left: 10vh;
+  }
+
+
+}

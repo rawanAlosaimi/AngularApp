@@ -1,0 +1,284 @@
+@font-face{
+  font-family: GE SS Two Medium;
+  src: url(../fonts/GE_SS_Two_Medium.otf) format("truetype");
+}
+
+@font-face{
+  font-family: GE SS Two Light;
+  src: url(../fonts/GE_SS_Two_Light.otf) format("truetype");
+}
+
+
+.r2{
+  margin-top: 6vh;
+}
+
+
+body{
+  height: 100vh;
+}
+
+.sr {
+  text-align: right;
+  padding-top: 5vh;
+}
+
+.line1 {
+  width: 30vh;
+  height: 0.5vh;
+  background-color: white;
+  border-radius: 20vh;
+  float: right;
+  margin-top: 2.5vh;
+}
+
+h1 {
+  color: #5D8E6D;
+  font-family: "GE SS Two Medium";
+  padding-right: 31vh;
+  text-align: right;
+}
+
+/****************/
+
+.all {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1vh;
+}
+
+.b1{
+  background-image: url('../../img/Partners/elm.png');
+}
+
+.b2{
+  background-image: url('../../img/Partners/masdar.png');
+}
+
+.b3{
+  background-image: url('../../img/Partners/saudia.png');
+}
+
+.b4{
+  background-image: url('../../img/Partners/almabani.png');
+}
+
+.b5{
+  background-image: url('../../img/Partners/cissco.png');
+}
+
+
+.b6{
+  background-image: url('../../img/Partners/hewlett.png');
+}
+
+.b7{
+  background-image: url('../../img/Partners/commsc.png');
+}
+
+.b8{
+  background-image: url('../../img/Partners/btc.png');
+}
+
+
+.b9{
+  background-image: url('../../img/Partners/midwam.png');
+}
+
+.b10{
+  background-image: url('../../img/Partners/sophos.png');
+}
+
+
+.b11{
+  background-image: url('../../img/Partners/apc.png');
+}
+
+
+.b12{
+  background-image: url('../../img/Partners/gorgy.png');
+}
+
+.b13{
+  background-image: url('../../img/Partners/sapling.png');
+}
+
+
+.b14{
+  background-image: url('../../img/Partners/mindstec.png');
+}
+
+
+.b15{
+  background-image: url('../../img/Partners/almatbouli.png');
+}
+
+
+
+.b1,
+.b2,
+.b3,
+.b4,
+.b5,
+.b6, .b7, .b7, .b8, .b9, .b10, .b11, .b12, .b13, .b14, .b15 {
+  width: 19vh;
+  height: 14vh;
+  background-color: rgb(189, 186, 186);
+  margin-top: 3vh;
+  box-shadow: rgba(88, 88, 241, 0.1) 0px 4px 16px, rgba(236, 236, 236, 0.05) 0px 8px 32px;
+  float: right;
+}
+
+
+h4 {
+  color: white;
+  font-family: 'GE SS Two Light';
+  text-align: center;
+  opacity: 0;
+}
+
+h6 {
+  color: white;
+  font-family: 'GE SS Two Light';
+  text-align: center;
+  opacity: 0;
+}
+
+
+
+
+.downIcon {
+  padding: 8px;
+  background-color: rgba(93, 142, 109, 0.4);
+  width: 5vh;
+  height: 5vh;
+  text-align: center;
+  border-radius: 50%;
+/*   position: absolute;
+  top: 94%;
+  left: 50%;
+  margin: -25px 0 0 -25px; */
+  transition: 1s;
+  cursor: pointer;
+  animation: upAndDown 1s ease-in-out infinite;
+}
+
+#downIcon {
+  width: 3vh;
+}
+
+
+.upIcon {
+  padding: 6px;
+  background-color: rgba(93, 142, 109, 0.4);
+  width: 5vh;
+  height: 5vh;
+  text-align: center;
+  border-radius: 50%;
+  top: 94%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  transition: 1s;
+  cursor: pointer;
+  animation: upAndDown2 1s ease-in-out infinite;
+}
+
+#upIcon {
+  width: 3vh;
+}
+
+
+@keyframes textVisibility {
+  from {
+    opacity: 0;
+    transform: translateY(-1vh);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes imgVisibility {
+  from {
+    opacity: 0;
+  }
+
+  to {}
+}
+
+
+@keyframes upAndDown {
+  from {
+    transform: translateY(-1vh);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes upAndDown2 {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-1vh);
+  }
+}
+
+
+/***** Mobile Design **************/
+
+@media (max-width: 786px) {
+
+  body{
+    height: 180vh;
+  }
+
+  .r2{
+    margin-top: 15vh;
+  }
+
+  .line1 {
+    width: 5vh;
+    margin-top: 2.2vh;
+  }
+
+  h1 {
+    padding-right: 6vh;
+    font-size: 1.7rem;
+  }
+
+  .b1,
+  .b2,
+  .b3,
+  .b4,
+  .b5,
+  .b6, .b7, .b7, .b8, .b9, .b10, .b11, .b12, .b13, .b14, .b15 {
+    width: 18vh;
+    height: 14vh;
+    /* margin-right: 1vh; */
+  }
+
+  .upIcon {
+    top: 185%;
+    left: 63%;
+    margin-left:2vh;
+  }
+
+/*   .upIcon {
+    top: 185%;
+    left: 50%;
+  } */
+
+}
+
+
+
+/******** iPad Design **********/
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {}

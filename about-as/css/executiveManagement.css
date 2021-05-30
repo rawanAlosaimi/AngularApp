@@ -1,0 +1,270 @@
+@font-face{
+  font-family: GE SS Two Medium;
+  src: url(../fonts/GE_SS_Two_Medium.otf) format("truetype");
+}
+
+@font-face{
+  font-family: GE SS Two Light;
+  src: url(../fonts/GE_SS_Two_Light.otf) format("truetype");
+}
+
+
+.r2{
+  margin-top: 33vh;
+}
+
+.sr {
+  text-align: right;
+  padding-top: 8vh;
+}
+
+.line1 {
+  width: 30vh;
+  height: 0.5vh;
+  background-color: white;
+  border-radius: 20vh;
+  float: right;
+  margin-top: 2.5vh;
+}
+
+h1 {
+  color: #5D8E6D;
+  font-family: "GE SS Two Medium";
+  padding-right: 31vh;
+  text-align: right;
+}
+
+/****************/
+
+.all {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1vh;
+}
+
+.b1 {
+  background-image: url('../../img/Pictures/img-goutah-small.jpg');
+}
+
+.b2 {
+  background-image: url('../../img/Pictures/img-muhtasib-small.jpg');
+}
+
+
+
+.b1,
+.b2,
+.b3,
+.b4,
+.b5,
+.b6 {
+  width: 22vh;
+  height: 25vh;
+  background-color: rgb(189, 186, 186);
+  margin-top:10vh;
+  box-shadow: rgba(88, 88, 241, 0.1) 0px 4px 16px, rgba(236, 236, 236, 0.05) 0px 8px 32px;
+  float: right;
+}
+
+
+h4 {
+  color: white;
+  font-family: 'GE SS Two Light';
+  text-align: center;
+  opacity: 0;
+}
+
+h6 {
+  color: white;
+  font-family: 'GE SS Two Light';
+  text-align: center;
+  opacity: 0;
+}
+
+.b1:hover,
+.b2:hover,
+.b3:hover,
+.b4:hover,
+.b5:hover,
+.b6:hover {
+  background-image: none;
+  opacity: 1;
+  animation: imgVisibility 1s ease-out;
+  background-color: rgba(93, 142, 109, 0.5);
+}
+
+
+.b1:hover h4,
+.b2:hover h4,
+.b3:hover h4,
+.b4:hover h4,
+.b5:hover h4,
+.b6:hover h4 {
+  opacity: 1;
+  padding-top: 10vh;
+  animation: textVisibility 1s ease-in-out;
+}
+
+.b1:hover h6,
+.b2:hover h6,
+.b3:hover h6,
+.b4:hover h6,
+.b5:hover h6,
+.b6:hover h6 {
+  opacity: 1;
+  animation: textVisibility 1s ease-in-out;
+}
+
+
+.downIcon {
+  padding: 8px;
+  background-color: rgba(93, 142, 109, 0.4);
+  width: 5vh;
+  height: 5vh;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  transition: 1s;
+  cursor: pointer;
+  animation: upAndDown 1s ease-in-out infinite;
+}
+
+#downIcon {
+  width: 3vh;
+}
+
+
+.upIcon {
+  padding: 6px;
+  background-color: rgba(93, 142, 109, 0.4);
+  width: 5vh;
+  height: 5vh;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 94%;
+  left: 46%;
+  margin: -25px 0 0 -25px;
+  transition: 1s;
+  cursor: pointer;
+  animation: upAndDown2 1s ease-in-out infinite;
+}
+
+#upIcon {
+  width: 3vh;
+}
+
+
+@keyframes textVisibility {
+  from {
+    opacity: 0;
+    transform: translateY(-1vh);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes imgVisibility {
+  from {
+    opacity: 0;
+  }
+
+  to {}
+}
+
+
+@keyframes upAndDown {
+  from {
+    transform: translateY(-1vh);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes upAndDown2 {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-1vh);
+  }
+}
+
+
+/***** Mobile Design **************/
+
+@media (max-width: 786px) {
+
+  body{
+    height: 100vh;
+  }
+
+  .r2{
+    margin-top: 13vh;
+  }
+
+  .line1 {
+    width: 5vh;
+    margin-top: 2.2vh;
+  }
+
+  h1 {
+    padding-right: 6vh;
+    font-size: 1.7rem;
+  }
+
+  .b1,
+  .b2,
+  .b3,
+  .b4,
+  .b5,
+  .b6 {
+    width: 19vh;
+    height: 20vh;
+    margin-right: 7vh;
+  }
+
+
+  
+.b1:hover h4,
+.b2:hover h4,
+.b3:hover h4,
+.b4:hover h4,
+.b5:hover h4,
+.b6:hover h4 {
+  padding-top:5vh;
+}
+
+  .upIcon {
+    top: 110%;
+    left: 63%;
+    margin-right: 3vh;
+  }
+/* 
+  .upIcon {
+    top: 110%;
+    left: 50%;
+  } */
+
+}
+
+
+
+/******** iPad Design **********/
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  .r2{
+    margin-top: 43vh;
+  }
+
+}

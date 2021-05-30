@@ -1,0 +1,21 @@
+@font-face{
+    font-family: GE SS Two Medium;
+    src: url(../fonts/GE_SS_Two_Medium.otf) format("truetype");
+}
+
+
+
+@font-face{
+    font-family: GE SS Two Light;
+    src: url(../fonts/GE_SS_Two_Light.otf) format("truetype");
+}
+
+@font-face{
+    font-family: Calibre Bold;
+    src: url(../fonts/Calibre_Bold.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: Calibri Light;
+    src: url(../fonts/Calibri_Light.ttf) format("truetype");
+}

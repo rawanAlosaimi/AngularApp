@@ -1,0 +1,171 @@
+@font-face{
+  font-family: GE SS Two Medium;
+  src: url(../fonts/GE_SS_Two_Medium.otf) format("truetype");
+}
+
+@font-face{
+  font-family: GE SS Two Light;
+  src: url(../fonts/GE_SS_Two_Light.otf) format("truetype");
+}
+
+
+.r2{
+  margin-top: 18vh;
+}
+.sr {
+  text-align: right;
+  padding-top: 8vh;
+}
+
+.line1 {
+  width: 30vh;
+  height: 0.5vh;
+  background-color: white;
+  border-radius: 20vh;
+  float: right;
+  margin-top: 2.5vh;
+}
+
+h1 {
+  color: #5D8E6D;
+  font-family: "GE SS Two Medium";
+  padding-right: 31vh;
+  text-align: right;
+}
+
+
+.structureImg{
+  width: 120vh;
+  height: 50vh;
+}
+
+
+/****************/
+
+
+.downIcon {
+  padding: 8px;
+  background-color: rgba(93, 142, 109, 0.4);
+  width: 5vh;
+  height: 5vh;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  transition: 1s;
+  cursor: pointer;
+  animation: upAndDown 1s ease-in-out infinite;
+}
+
+#downIcon {
+  width: 3vh;
+}
+
+
+.upIcon {
+  padding: 6px;
+  background-color: rgba(93, 142, 109, 0.4);
+  width: 5vh;
+  height: 5vh;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 94%;
+  left: 46%;
+  margin: -25px 0 0 -25px;
+  transition: 1s;
+  cursor: pointer;
+  animation: upAndDown2 1s ease-in-out infinite;
+}
+
+#upIcon {
+  width: 3vh;
+}
+
+
+@keyframes upAndDown {
+  from {
+    transform: translateY(-1vh);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes upAndDown2 {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-1vh);
+  }
+}
+
+
+/***** Mobile Design **************/
+
+@media (max-width: 786px) {
+
+  body{
+    height: 90vh;
+  }
+
+  .r2{
+    margin-top: 25vh;
+  }
+
+  .line1 {
+    width: 5vh;
+    margin-top: 2.2vh;
+  }
+
+  h1 {
+    padding-right: 6vh;
+    font-size: 1.7rem;
+  }
+
+  .structureImg{
+    margin-top: 10vh;
+    width: 40vh;
+    height: 20vh;
+}
+
+
+
+  .upIcon {
+    top: 95%;
+    left: 63%;
+    margin-right: 3vh;
+  }
+/* 
+  .upIcon {
+    top: 95%;
+    left: 50%;
+  } */
+
+}
+
+
+
+/******** iPad Design **********/
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  body{
+    height: 100vh;
+  }
+
+  .r2{
+    margin-top: 28vh;
+  }
+  
+  .structureImg{
+    margin-top: 10vh;
+    width: 70vh;
+    height: 35vh;
+}
+
+}

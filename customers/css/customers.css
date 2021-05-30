@@ -1,0 +1,356 @@
+@font-face{
+  font-family: GE SS Two Medium;
+  src: url(../../fonts/GE_SS_Two_Medium.otf) format("truetype");
+}
+
+@font-face{
+  font-family: GE SS Two Light;
+  src: url(../fonts/GE_SS_Two_Light.otf) format("truetype");
+}
+
+
+.r2{
+  margin-top: 7vh;
+}
+
+
+.r0{
+  margin-left: 5vh;
+}
+
+
+.sr {
+  text-align: center;
+  padding-top: 4vh;
+}
+
+.line1 {
+  width: 30vh;
+  height: 0.5vh;
+  background-color: white;
+  border-radius: 20vh;
+  float: right;
+  margin-top: 3.5vh;
+}
+
+h1 {
+  color: #5D8E6D;
+  font-family: "GE SS Two Medium";
+  padding-right: 31vh;
+  text-align: right;
+}
+
+.text{
+  color: white;
+  font-family: "GE SS Two Light";
+  width: 111vh;
+  font-size: 1.2rem;
+  text-align: right;
+  float: right;
+  margin-right: 33vh;
+  margin-top: 2vh;
+  /* margin-bottom: 8vh; */
+}
+
+/****************/
+
+.all {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:  10vh;
+  border-radius: 1vh;
+}
+
+
+.b1{
+  background-image: url('../../img/customers/police.jpg');
+}
+
+.b2{
+  background-image: url('../../img/customers/general-intelligence-directorate.jpg');
+}
+
+.b3{
+  background-image: url('../../img/customers/presidency-state-security.jpg');
+}
+
+.b4{
+  background-image: url('../../img/customers/ministry-of-media.jpg');
+}
+
+.b5{
+  background-image: url('../../img/customers/ministry-housing.jpg');
+}
+
+.b6{
+  background-image: url('../../img/customers/moi-diwan.jpg');
+  
+}
+
+/*************/
+
+.b7{
+  background-image: url('../../img/customers/royal-private-affairs.jpg');
+}
+
+.b8{
+  background-image: url('../../img/customers/general-directorate-of-passports.jpg');
+}
+
+.b9{
+  background-image: url('../../img/customers/civil-affairs.jpg');
+}
+
+.b10{
+  background-image: url('../../img/customers/public-prosecution.jpg');
+}
+
+.b11{
+  background-image: url('../../img/customers/national-information-center.jpg');
+}
+
+.b12{
+  background-image: url('../../img/customers/royal-guard.jpg');
+  
+}
+
+
+/*************/
+
+.b13{
+  background-image: url('../../img/customers/human-rights-commission.jpg');
+}
+
+.b14{
+  background-image: url('../../img/customers/saudi-electronic-university.jpg');
+}
+
+.b15{
+  background-image: url('../../img/customers/qassim-university.jpg');
+}
+
+.b16{
+  background-image: url('../../img/customers/princess-nourah-university.jpg');
+}
+
+.b17{
+  background-image: url('../../img/customers/civil-defense.jpg');
+}
+
+.b18{
+  background-image: url('../../img/customers/general-directorate-narcotics-control.jpg');
+  
+}
+
+
+
+.b1,
+.b2,
+.b3,
+.b4,
+.b5,
+.b6, .b7, .b7, .b8, .b9, .b10, .b11, .b12, .b13, .b14, .b15, .b16, .b17, .b18 {
+  width: 16vh;
+  height: 14vh;
+  background-color: white;
+  margin-top: 1vh;
+  box-shadow: rgba(88, 88, 241, 0.1) 0px 4px 16px, rgba(236, 236, 236, 0.05) 0px 8px 32px;
+ text-align: center;
+}
+
+
+h5 {
+  text-align: center;
+  color: white;
+  font-family: 'GE SS Two Light';
+  text-align: center;
+  font-size: 1rem;
+  opacity: 0; 
+}
+
+h6 {
+  color: white;
+  font-family: 'GE SS Two Light';
+  text-align: center;
+  opacity: 0;
+}
+
+#spical{
+  margin-top: 1vh;
+}
+
+.b1:hover, .b2:hover, .b3:hover, .b4:hover, .b5:hover, .b6:hover,
+.b7:hover, .b8:hover, .b9:hover, .b10:hover, .b11:hover, .b12:hover,
+.b13:hover, .b14:hover, .b15:hover, .b16:hover, .b17:hover, .b18:hover{
+  background-image: none;
+  opacity: 1;
+  animation: imgVisibility 1s ease-out;
+  background-color: rgba(93, 142, 109, 0.5);
+}
+
+
+.b1:hover h5, .b2:hover h5, .b3:hover h5, .b4:hover h5, .b5:hover h5, .b6:hover h5,
+.b7:hover h5, .b8:hover h5, .b9:hover h5, .b10:hover h5, .b11:hover h5, .b12:hover h5,
+.b13:hover h5, .b14:hover h5, .b15:hover h5, .b16:hover h5, .b17:hover h5, .b18:hover h5{
+  opacity: 1;
+  /* padding-top: 10vh; */
+  animation: textVisibility 1s ease-in-out;
+}
+
+.b1:hover h6, .b2:hover h6, .b3:hover h6, .b4:hover h6, .b5:hover h6, .b6:hover h6,
+.b7:hover h6, .b8:hover h6, .b9:hover h6, .b10:hover h6, .b11:hover h6, .b12:hover h6,
+.b13:hover h6, .b14:hover h6, .b15:hover h6, .b16:hover h6, .b17:hover h6, .b18:hover h6{
+  opacity: 1;
+  animation: textVisibility 1s ease-in-out;
+}
+
+
+.downIcon {
+  padding: 8px;
+  background-color: rgba(93, 142, 109, 0.4);
+  width: 5vh;
+  height: 5vh;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  transition: 1s;
+  cursor: pointer;
+  animation: upAndDown 1s ease-in-out infinite;
+}
+
+#downIcon {
+  width: 3vh;
+}
+
+
+.upIcon {
+  padding: 6px;
+  background-color: rgba(93, 142, 109, 0.4);
+  width: 5vh;
+  height: 5vh;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 94%;
+  left: 46%;
+  margin: -25px 0 0 -25px;
+  transition: 1s;
+  cursor: pointer;
+  animation: upAndDown2 1s ease-in-out infinite;
+}
+
+#upIcon {
+  width: 3vh;
+}
+
+
+@keyframes textVisibility {
+  from {
+    opacity: 0;
+    transform: translateY(-1vh);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes imgVisibility {
+  from {
+    opacity: 0;
+  }
+
+  to {}
+}
+
+
+@keyframes upAndDown {
+  from {
+    transform: translateY(-1vh);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes upAndDown2 {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-1vh);
+  }
+}
+
+
+/***** Mobile Design **************/
+
+@media (max-width: 786px) {
+
+  body{
+    height: 200vh;
+  }
+
+  .text{
+    margin-right: 0vh;
+  }
+
+  .line1 {
+    width: 5vh;
+    margin-top: 2.2vh;
+  }
+
+  h1 {
+    padding-right: 6vh;
+    font-size: 1.7rem;
+  }
+
+  .text{
+    width: 30vh;
+    margin-right: 2vh;
+    margin-bottom: 3vh;
+}
+
+.text p{
+    font-size: 1rem;
+}
+
+.r0{
+  margin-left: 0vh;
+}
+
+  .upIcon {
+    margin-right: 3vh;
+  }
+
+
+}
+
+
+
+/******** iPad Design **********/
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+
+  body{
+    height: 185vh;
+  }
+
+  .text{
+    width: 50vh;
+  }
+  
+  .b1, .b2, .b3, .b4, .b5, .b6, .b7, .b7, .b8, .b9, .b10, .b11, .b12, .b13, .b14, .b15, .b16, .b17, .b18 {
+    width: 24vh;
+  }
+
+  h5{
+    padding-top: 5vh;
+  }
+}
